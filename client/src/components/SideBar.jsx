@@ -24,9 +24,9 @@ const SideBar = () => {
            <div className='flex justify-between items-center'>
               <img src={assets.logo} alt="logo" className='max-w-40' />
               <div className='relative py-2 group'>
-                 <img onClick={() => setIsMenuOpen(!isMenuOpen)} src={assets.menu_icon} alt="menu-icon" className='max-h-5' />
+                 <img onClick={() => setIsMenuOpen(!isMenuOpen)} src={assets.menu_icon} alt="menu-icon" className='max-h-5 cursor-pointer' />
                  <div className={`absolute top-full right-0 z-20 w-32 p-5 rounded-md
-                 bg-[#282142] border border-gray-600 text-gray-100${isMenuOpen ? 'block' : 'hidden'}`}>
+                 bg-[#282142] border border-gray-600 text-gray-100 ${isMenuOpen ? 'block' : 'hidden'}`}>
                     <p onClick={()=>{
                                 setIsMenuOpen(false); // Close menu on click
                                 navigate('/profile');
