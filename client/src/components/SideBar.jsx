@@ -52,7 +52,7 @@ const SideBar = () => {
                     <div className='flex flex-col leading-5'>
                     <p>{user.fullName}</p>
                     {
-                        onlineUsers?.includes(user._id)  ? <span className='text-green-400 text-xs'>Online</span> : <span className='text-green-400 text-xs'>Offline</span>
+                        onlineUsers?.includes(user._id)  ? <span className='text-green-400 text-xs'>Online</span> : <span className='text-gray-400 text-xs'>Offline</span>
                     }
                     </div>
                     {unseenmessage?.[user._id]>0 && <p className='absolute top-4 right-4 text-xs h-5 w-5 
