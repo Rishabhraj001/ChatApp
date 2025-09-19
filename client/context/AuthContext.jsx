@@ -38,7 +38,7 @@ useEffect(() => {
                 connectSocket(data.user);
             }
         } catch (error) {
-            toast.error("You have Logged Out");
+            toast.error("Please Login");
         }
     };
     useEffect(()=>{
